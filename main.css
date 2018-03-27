@@ -1,0 +1,78 @@
+body {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+.calc-container {
+  border: 1px solid #000;
+  display: block;
+  max-width: 300px;
+  padding: 0 5px 5px 5px;
+  border-radius: 15px;
+  margin: 20vh auto;
+  background-color: #eee;
+}
+
+.buttons-container .calc-button {
+  width: calc(25% - 3px);
+  height: 45px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.buttons-container .calc-button:not(:disabled):hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.buttons-container .calc-button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 22px;
+  line-height: 1;
+  font-family: Arial, Sans-Serif;
+}
+
+.output-display,
+.equation-display {
+  position: relative;
+}
+
+.output-display .output-content,
+.equation-display .equation-content {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.output-display {
+  height: 60px;
+}
+
+.equation-display {
+  height: 40px;
+}
+
+.output-display .output-content {
+  font-size: 50px;
+}
+
+.equation-display .equation-content {
+  font-size: 20px;
+}
+
+.wrong-id {
+  display: none;
+  padding: 40px;
+  margin-top: -20vh;
+  text-align: center;
+}
+
+.wrong-id span{
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.1;
+}
